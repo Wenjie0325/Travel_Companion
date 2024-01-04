@@ -4,19 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ClientApplication {
-    private int id;
-    private User_Info cakeSpec;
-    private List<Order_info> cakeInvoices = new ArrayList<>();
-
-    public ClientApplication(int id, User_Info cakeSpec, List<Order_info> cakeInvoices) {
-        this.id = id;
-        this.cakeSpec = cakeSpec;
-        this.cakeInvoices = cakeInvoices;
-    }
-
-    public ClientApplication() {
-    }
-
     public int getId() {
         return id;
     }
@@ -25,19 +12,34 @@ public class ClientApplication {
         this.id = id;
     }
 
-    public User_Info getCakeSpec() {
-        return cakeSpec;
+    public User_Info getUserinfo() {
+        return userinfo;
     }
 
-    public void setCakeSpec(User_Info cakeSpec) {
-        this.cakeSpec = cakeSpec;
+    public void setUserinfo(User_Info userinfo) {
+        this.userinfo = userinfo;
     }
 
-    public List<Order_info> cakeInvoices() {
-        return cakeInvoices;
+    public List<Order_info> getOrderinfo() {
+        return orderinfo;
     }
 
-    public void setCakeInvoices(List<Order_info> cakeInvoices) {
-        this.cakeInvoices = cakeInvoices;
+    public void setOrderinfo(List<Order_info> orderinfo) {
+        this.orderinfo = orderinfo;
     }
+
+    private int id;
+    private User_Info userinfo;
+    private List<Order_info> orderinfo = new ArrayList<>();
+
+    public ClientApplication(int id, User_Info userinfo, List<Order_info> orderinfo) {
+        this.id = id;
+        this.userinfo = userinfo;
+        this.orderinfo = orderinfo;
+    }
+
+    public ClientApplication() {
+    }
+
+
 }
