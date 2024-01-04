@@ -1,8 +1,8 @@
-package A_Company;
+package B_Company;
 
-public class Price_Setting {
+public class B_Price_Setting {
     //protected double num_people_price = 500;
-    protected double Service_Price = 200;
+    protected double Service_Price = 300;
     protected double destination_price;
     protected double travel_way_price;
 
@@ -12,13 +12,13 @@ public class Price_Setting {
     protected double hotel_price = 30;
 
 
-    protected double num_people_rate = 0.8;
-    protected double destination_rate = 1.1;
-    protected double travel_way_rate = 1.2;
+    protected double num_people_rate = 0.7;
+    protected double destination_rate = 1.3;
+    protected double travel_way_rate = 1.1;
     protected double hotel_star_rate = 0.7;
     //protected double travel_time_rate = 0.5;
-    protected double isFood_rate = 1;
-    protected double isInsurance_rate = 0.9;
+    protected double isFood_rate = 0.9;
+    protected double isInsurance_rate = 0.7;
 
     protected void setDestination_Price(String des){
         if(des == "Euro"){
